@@ -65,7 +65,7 @@ const projects = [
       ,
         stack: [{name: "JavaScript"}, {name: "HTML"}],
         image: "/assets/work/LandOrWater.gif",
-        live: "",
+        live: "https://makaveli2p.github.io/land-or-water/",
         github: "https://github.com/makaveli2P/land-or-water?tab=readme-ov-file",
     },
 ];
