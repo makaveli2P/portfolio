@@ -19,7 +19,7 @@ const projects = [
         num: "01",
         category: "Full Stack",
         title: "SketchSync",
-        description: "A Better Digital Whiteboard",
+        description: "a better digital whiteboard.",
         stack: [{name: "TypeScript"}, {name: "React"}, {name: "Node.js"}, {name: "Socket.IO"}],
         image: "/assets/work/SketchSync.png",
         live: "https://test-board-d60b410b608b.herokuapp.com/",
@@ -29,31 +29,44 @@ const projects = [
         num: "02",
         category: "Backend",
         title: "Distributed System Simulator",
-        description: "Distributed algorithms in action",
+        description: "snapshot, wave, deadlock detection and election algorithms in action.",
         stack: [{name: "Scala"}, {name: "Akka"}],
-        image: "/assets/work/thumb1.png",
+        image: "/assets/work/Distributed.png",
         live: "https://github.com/makaveli2P/CS553-DistributedAlgorithms",
         github: "https://github.com/makaveli2P/CS553-DistributedAlgorithms",
     },
     {
         num: "03",
         category: "backend",
-        title: "Assembly Language Interpreter",
-        description: "ASM interpreter in C++",
-        stack: [{name: "C++"}, {name: "C"}, {name: "Ninja"}],
-        image: "/assets/work/gameplay.gif",
+        title: "Pacman",
+        description: "recreating the classic game in a new way.",
+        stack: [{name: "C#"}, {name: "Unity"}],
+        image: "/assets/work/Pacman.png",
         live: "",
-        github: "https://github.com/makaveli2P/oop-projects/tree/main/Project%204",
+        github: "",
     },
     {
         num: "04",
         category: "backend",
-        title: "Pacman",
-        description: "recreating the classic game in a new way",
-        stack: [{name: "C#"}, {name: "Unity"}],
-        image: "/assets/work/thumb3.png",
+        title: "Assembly Language Interpreter",
+        description: "interpreter for a stripped down assemebly language with hardware emulation.",
+        stack: [{name: "C++"}, {name: "C"}, {name: "Ninja"}],
+        image: "/assets/work/ALI.png",
+        live: "https://github.com/makaveli2P/oop-projects/tree/main/Project%204",
+        github: "https://github.com/makaveli2P/oop-projects/tree/main/Project%204",
+    },
+    {
+        num: "05",
+        category: "frontend",
+        title: "Land or Water",
+        description: <p>
+        just for fun based on <a href="https://github.com/vnglst/pong-wars?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" style={{ color: '#80e5b3' }}>this</a>
+      </p>
+      ,
+        stack: [{name: "JavaScript"}, {name: "HTML"}],
+        image: "/assets/work/LandOrWater.gif",
         live: "",
-        github: "https://github.com/TomarGunjan/CS553-DistributedAlgorithms",
+        github: "https://github.com/makaveli2P/land-or-water?tab=readme-ov-file",
     },
 ];
 
@@ -89,7 +102,7 @@ const Projects = () => {
                             {/* project category */}
                             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent
                             transition-all duration-500 capitalize">
-                                {project.category} project
+                                {project.title}
                             </h2>
                             {/* project description */}
                             <p className="text-white/60">
